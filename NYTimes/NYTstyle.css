@@ -1,0 +1,87 @@
+body {
+	font-family: 'Comfortaa', cursive;
+	word-spacing: 0.2em;
+}
+
+h1 {
+	font-weight:bolder;
+	font-size: 3em;
+	letter-spacing: 0.05em;
+	word-spacing: 0.1em;
+	text-transform: lowercase;
+	color:white;
+	background-color:black;
+	padding-left:0.1em;
+	padding-right: 0.08em;
+	padding-top:0.07em;
+	padding-bottom:0.02em;
+}
+
+.container {
+	margin-top: 6.2rem;
+	margin-bottom: 5.2rem;
+	margin-right: 7rem;
+	margin-left: 7rem;
+}
+
+.main-title {
+	width: 75%;
+}
+
+.sub-title {
+	text-transform: lowercase;
+	letter-spacing: 0.05em;
+	word-spacing: 0.5em;
+
+}
+
+.article_body {
+	text-align:justify;
+	column-count: 2;
+	column-gap: 2em;
+	font-size:0.85em;
+	line-height: 1.4;
+}
+
+.article_body p {
+	padding-bottom:1em;
+}
+
+.publication {
+	text-align:justify;
+	font-size:1.3em;
+	margin-top: 2.2rem;
+	margin-bottom: 2.2rem;
+	font-weight:bolder;
+	text-transform: lowercase;
+	line-height: 1;
+}
+
+.date {
+	position: absolute;
+	margin-top: -53.2em;
+	margin-left: 28em;
+	font-size:1.7em;
+}
+
+.month {
+	font-size:0.8em;
+}
+
+.year {
+	font-size:1.5em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  padding-top: 0.7em;
+  padding-bottom: 1.2em;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+figcaption {
+	font-weight:lighter;
+	font-size: 0.7em;
+}
