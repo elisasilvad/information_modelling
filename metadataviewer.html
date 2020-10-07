@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<style>
+		#metaInfo {
+			margin-bottom: 5%;
+		}
+
+		#metaInfo .button-image {
+			border:none;
+		}
+
+		#metaInfo button {
+			background-color: transparent;
+		}
+
+		#metaInfo button:hover {
+			opacity: 0.5;
+		}
+
+		#metaInfo img {
+			width: 90px;
+		}
+
+		#dark, #light {
+			display:block;
+			border: none;
+			float: right;
+		}
+
+		#eyeStyle {
+			display: block;
+			text-align: center;
+			width: 100%;
+			margin-top: 3%;
+		}
+
+		#eyeStyle button {
+			padding: 2%;
+		}
+
+		#SelectStyles {
+			width: 30%;
+			display:inline-block;
+			float:left;
+		}
+
+		#ArticleContainer {
+			width: 70%;
+			display:inline-block;
+			float:right;
+		}
+		</style>
+
+		<link id="ArticleCss" rel="stylesheet" type="text/css" href="default.css"></link>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="metaviewer.js"></script>
+
+
+
+	</head>
+	<body>
+		<div id="metaInfo">
+			<button type="button" onclick="whichStyle()">Click here to see which style</button>
+			<a id="dark" onclick="darkMode('dark.css')"><img src="lightmode.png"></a>          <!-- Also button -->
+			<a id="light" onclick="darkMode('default.css')"><img src="darkmode.png"></a>
+			<div id="eyeStyle">
+				<button type="button" class="button-image" onclick="changeStyle('1920.css')"><img src="eye1.png"></button>
+				<button type="button" class="button-image" onclick="changeStyle('1920.css')"><img src="eye2.png"></button>
+				<button type="button" class="button-image" onclick="changeStyle('1920.css')"><img src="eye3.png"></button>
+				<button type="button" class="button-image" onclick="changeStyle('1920.css')"><img src="eye4.png"></button>
+				<button type="button" class="button-image" onclick="changeStyle('2000.css')"><img src="eye5.png"></button>
+				<button type="button" class="button-image" onclick="changeStyle('2000.css')"><img src="eye6.png"></button>
+				<button type="button" class="button-image" onclick="changeStyle('2000.css')"><img src="eye7.png"></button>
+				<button type="button" class="button-image" onclick="changeStyle('2000.css')"><img src="eye8.png"></button>
+			</div>
+		</div>
+
+			<div id="SelectStyles">
+				<select id="styles" placeholder="Select a style">
+					<option value="none" selected="selected">Styles</option>     <!-- The selected attribute is a boolean attribute. When present, it specifies that an option should be 																		pre-selected when the page loads.-->
+					<option value="1920">1920</option>
+					<option value="2000">2000</option>
+				</select>
+			</div>
+
+			<div id="ArticleContainer">
+				<h1>Title</h1>
+				<h3>Reading time: <span id="readingTime"></span></h3>
+				<p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+
+			</div>
+	</body>
+</html>
