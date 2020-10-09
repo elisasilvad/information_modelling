@@ -30,11 +30,11 @@ body {
 #selector, #fileWrapper {
     height:100%;
 }
-.navbar, .page-footer {
+.navbar, {
    background-color: #25383C;
    color:#F5F5F5;
 }
-.navbar, .page-footer a {
+.navbar, a {
     color:#F5F5F5;
     text-decoration: none;
  }
@@ -401,9 +401,6 @@ a#closebtn-2 {
     top: -30px;
     margin-right: 0.2em;
     font-size: 2em;
-}
-#footer-links {
-    background-color:#6351ce;
 }
 
 #sticky-eye {
