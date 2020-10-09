@@ -713,3 +713,17 @@ a#closebtn-2 {
     margin-right: 0.2em;
     font-size: 2em;
 }
+
+.offcanvas {
+    left: 0;
+    height:100%;
+    position: fixed;
+    top:0;
+    padding-top: 70px;
+    width: 320px;
+    z-index: 2;
+    transform: translateX( -100% );
+    transition: all 0.25s;
+    overflow-y:scroll;
+    background-color: white;
+}
