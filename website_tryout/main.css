@@ -30,14 +30,7 @@ body {
 #selector, #fileWrapper {
     height:100%;
 }
-.navbar, {
-   background-color: #25383C;
-   color:#F5F5F5;
-}
-.navbar, a {
-    color:#F5F5F5;
-    text-decoration: none;
- }
+
 
 h1, h2, h3, h4, h5{
     font-family: 'OpenSans', sans-serif;
@@ -65,9 +58,6 @@ h1, h2, h3, h4, h5{
   }
 .sticky #metadataViewer {
     padding-top:70px;
-}
-#metadataViewer h4 {
-    font-family: "RobotoSlab", sans-serif; 
 }
 
 #metadataViewer .label {

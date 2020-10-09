@@ -393,7 +393,7 @@ ul.docStyles > li >a:checked {
   color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   .palette-grid {
     grid-template-rows: auto 300px auto repeat(2, 240px) auto repeat(4, 200px);
   }
@@ -480,7 +480,7 @@ margin-top:50px;}
 .our-team .social-link li a:hover{
     color: #e143eb;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 750px){
     .our-team{
         margin-bottom: 15%;
     }
@@ -521,16 +521,16 @@ margin-top:50px;}
   margin-left:40%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 750px) {
   #eyeStyle #buttonList {
-    font-size: 1em;
-    margin-top: 10%;
+    font-size: 0.8em;
+    margin-top: 13%;
     margin-left: 0%;
   }
 
   #eyeStyle button {
-    padding: 2px;
-    width:37px;
+    padding: 4%;
+    width:47px;
   }
 }
 
