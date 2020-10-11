@@ -518,20 +518,8 @@ margin-top:50px;}
 }
 
 #eyeStyle #buttonList {
-  margin-top: 10%;
+  margin-top: 3%;
   margin-left:45%;
-}
-
-@media screen and (max-width: 767px) {
-  #eyeStyle #buttonList {
-    margin-top: 10%;
-    margin-left: 0%;
-  }
-
-  #eyeStyle button {
-    margin-top: 15%;
-      width:47px;
-  }
 }
 
 #eyeStyle img {
@@ -539,7 +527,8 @@ margin-top:50px;}
 }
 
 #eyeStyle button {
-  font-size: 17px;
+  font-family: "hardingreg";
+  font-size: 1.2em;
   border: none;
   background-color: transparent;
 }
@@ -565,11 +554,11 @@ margin-top:50px;}
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    padding-bottom:20px;
+    padding-bottom:5%;
 }
 
 #selector .list a {
-    padding-top: 25px;
+    padding-top: 5%;
 }
 
 /* width */
@@ -730,4 +719,17 @@ a#closebtn-2 {
     transition: all 0.25s;
     overflow-y:scroll;
     background-color: white;
+}
+
+
+@media screen and (max-width: 767px) {
+  #eyeStyle #buttonList {
+    margin-top: 10%;
+    margin-left: 0%;
+  }
+
+  #eyeStyle button {
+    margin-top: 15%;
+      width:47px;
+  }
 }

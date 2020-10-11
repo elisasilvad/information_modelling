@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Comfortaa:wght@300&display=swap');
 
-body {
-	background-image: url("https://images.freeimages.com/images/large-previews/612/white-paper-texture-1152962.jpg");
-}
-
 a {
 	color: black;
 }
 
+#file {
+	background-image: url("https://images.freeimages.com/images/large-previews/612/white-paper-texture-1152962.jpg");
+	min-height:100vh;
+}
 
 #ArticleBody {
 		/** container **/
