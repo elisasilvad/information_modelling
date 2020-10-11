@@ -146,7 +146,7 @@ function main() {
         closeNav()
     }
     
-    $('.head-title').html(document.title);
+    $('.head-title').html("Look at ''" + document.title + "'' metadata");
 
     var title = $('meta[name="DC.title"]').attr("content");
     var editor = $('meta[name="DC.creator"]').attr("content");
@@ -522,13 +522,14 @@ function reverseAccess(obj) {
 }
 
 
-//$(document).ready(function(){
-//    $(".eyeActive").hide();
-//    $("#eyeStyle button").click(function(){
-//        $(this).find(".eyeActive").show();
-//  });
-//});
 
+
+//Change style through buttons
+function changeStyle(selectedStyle) {
+    document.getElementById('ArticleCss').setAttribute('href', selectedStyle);
+}
+
+//Manage active style button
 $(document).ready(function(){
     $(".eyeActive").hide();
 
@@ -566,6 +567,13 @@ $(document).ready(function(){
   });
 });
 
-function changeStyle(selectedStyle) {
-    document.getElementById('ArticleCss').setAttribute('href', selectedStyle);
-}
+//Open button fadeIn
+$(document).ready(function(){
+    $(".head-title").hide();
+    $(".openbtn").mouseover(function(){
+      $(".head-title").fadeIn(500);
+    });
+    $(".openbtn").mouseout(function(){
+      $(".head-title").fadeOut(500);
+    });
+});

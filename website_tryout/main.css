@@ -409,11 +409,7 @@ a#closebtn-2 {
     display: none;/*value will change via javascript*/
 }
 
-span.head-title {
-    font-size: 0.5em;
-    padding-left: 0.5em;
-    font-family: 'OpenSans', sans-serif;
-}
+
 
 #wikiLink {
     font-size: 80%;
