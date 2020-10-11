@@ -58,6 +58,7 @@ var expandCollapse = function(){
         });
     }
 }
+
 function openNav() {
     closeOccurrences();
     $('.offcanvas').css('transform', 'translateX( 0 )');
