@@ -270,6 +270,7 @@ img {
 }
 #footer {
   background-color: #f2f2f2;
+  margin-top: 5%;
 }
 #firstColumn, #secondColumn, #thirdColumn {
   display: inline-block;
@@ -523,6 +524,7 @@ margin-top:50px;}
 
 @media screen and (max-width: 767px) {
   #eyeStyle #buttonList {
+    margin-top: 10%;
     margin-left: 0%;
   }
 
