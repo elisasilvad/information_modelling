@@ -533,6 +533,9 @@ function changeStyle(selectedStyle) {
 $(document).ready(function(){
     $(".eyeActive").hide();
 
+    $("#none").click(function(){
+        $(".eyeActive").hide();
+  });
     $("#1370").click(function(){
         $(".eyeActive").hide();
         $("#1370eye").show();
