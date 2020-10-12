@@ -250,6 +250,7 @@ margin-left:10%;}
 margin-top:5%;
 margin-bottom:5%;
 }    
+
 .eyeicon {
 text-align:center;
 width:100%;
@@ -268,13 +269,16 @@ img {
   max-height: 300px;
   object-fit: cover;
 }
+
 #footer {
   background-color: #f2f2f2;
   margin-top: 5%;
 }
+
 #firstColumn, #secondColumn, #thirdColumn {
   display: inline-block;
 }
+
 .page-footer ul {
   list-style-type: none;
 }
@@ -524,7 +528,7 @@ margin-top:50px;}
 
 #eyeStyle #buttonList {
   margin-top: 3%;
-  margin-left:45%;
+  text-align: center;
 }
 
 #eyeStyle img {
@@ -648,7 +652,7 @@ a#closebtn-2 {
 }
 
 .sticky #metadataViewer {
-    padding-top:70px;
+    padding-top:10%;
 }
 
 #metadataViewer .label {
@@ -814,10 +818,7 @@ a#closebtn-2 {
     content: "";
     clear: both;
     display: table;
-  }
-
-
-
+}
 
 @media screen and (max-width: 767px) {
   #eyeStyle #buttonList {

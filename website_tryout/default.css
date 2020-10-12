@@ -10,3 +10,15 @@
 #file .ArticleInfo {
 	margin-bottom: 3%;
 }
+
+#file table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#file th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+#file tr:nth-child(even) {background-color: #f2f2f2;}
