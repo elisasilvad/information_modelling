@@ -71,7 +71,7 @@
 
     <div class="container-fluid">
         <!--Sticky open button for mobile -->
-        <div id="sticky-eye"><span class="openbtn" onclick="openNav()">&laquo;</span><span class="head-title"></span></div> <!-- Freccetta!!!! -->
+<!-- Freccetta!!!! -->
 
         <div class="col-sm-12">
 
@@ -123,7 +123,7 @@
                                         <option value="2025">2025</option>
                                     </select>
                                 </div>
-                                <div id="disclaimer-btn"><button href="#" onclick="loadDisclaimer()">Disclaimer</button></div>
+                                <!-- <div id="disclaimer-btn"><button href="#" onclick="loadDisclaimer()">Disclaimer</button></div> -->
                             </div>
                         </div>
                     </div>
@@ -142,12 +142,10 @@
                     <div class="pagination-link"><a href="#" onclick="main()" class="coverLink">Index</a></div>
                     <div class="pagination-link"><a href="#" class="next">&raquo;</a></div>
                 </div>
-                <div id="disclaimer-btn">
-                    <button href="#" onclick="loadDisclaimer()">Disclaimer</button>
-                </div>
 
 
                 <div id="buttonList">
+                    <div id="sticky-eye"><span class="openbtn" onclick="openNav()">&laquo;</span><span class="head-title"></span></div> 
                     <button type="button" id="none" class="button-image" onclick="changeStyle('default.css')">None</button>
                     <button type="button" id="1370" class="button-image" onclick="changeStyle('1370.css')">1370<i id="1370eye" class="fa fa-eye eyeicon eyeActive"></i></button>
                     <button type="button" id="1560" class="button-image" onclick="changeStyle('1560.css')">1560<i id="1560eye" class="fa fa-eye eyeicon eyeActive"></i></button>
@@ -157,6 +155,9 @@
                     <button type="button" id="2000" class="button-image" onclick="changeStyle('2000.css')">2000<i id="2000eye" class="fa fa-eye eyeicon eyeActive"></i></button>
                     <button type="button" id="2020" class="button-image" onclick="changeStyle('2020.css')">2020<i id="2020eye" class="fa fa-eye eyeicon eyeActive"></i></button>
                     <button type="button" id="2040" class="button-image" onclick="changeStyle('2040.css')">2040<i id="2040eye" class="fa fa-eye eyeicon eyeActive"></i></button>
+
+                    <button id="disclaimer-btn" href="#" onclick="loadDisclaimer()">Disclaimer</button>
+
                 </div>
             </div>
                 
