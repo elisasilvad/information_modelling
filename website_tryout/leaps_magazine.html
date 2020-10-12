@@ -26,9 +26,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link id="ArticleCss" rel="stylesheet" type="text/css" href="default.css"></link>
-<!--    <style id="ArticleCss" type="text/css">
 
-    </style> -->
 </head>
 <body>
     <!-- Navbar -->
@@ -77,8 +75,16 @@
 
         <div class="col-sm-12">
             <div id="eyeStyle">
+                <!-- Pagination links -->
+                            <div id="paginationLinks">
+                                <div class="pagination-link"><a href="#" class="previous">&laquo;</a></div>
+                                <div class="pagination-link"><a href="#" onclick="main()" class="coverLink">Index</a></div>
+                                <div class="pagination-link"><a href="#" class="next">&raquo;</a></div>
+                            </div>
+
+                
                 <div id="buttonList">
-                    <button type="button" id="none" class="button-image" onclick="changeStyle('')">None</button>
+                    <button type="button" id="none" class="button-image" onclick="changeStyle('default.css')">None</button>
                     <button type="button" id="1370" class="button-image" onclick="changeStyle('1370.css')">1370<i id="1370eye" class="fa fa-eye eyeicon eyeActive"></i></button>
                     <button type="button" id="1560" class="button-image" onclick="changeStyle('1560.css')">1560<i id="1560eye" class="fa fa-eye eyeicon eyeActive"></i></button>
                     <button type="button" id="1860" class="button-image" onclick="changeStyle('1860.css')">1860<i id="1860eye" class="fa fa-eye eyeicon eyeActive"></i></button>
@@ -101,12 +107,6 @@
                 <div id="metadataViewer">
                     <div class="row clearfix">
                         <div class="col-md-12">
-                            <!-- Pagination links -->
-                            <div id="paginationLinks">
-                                <div class="pagination-link"><a href="#" class="previous">&laquo;</a></div>
-                                <div class="pagination-link"><a href="#" onclick="main()" class="coverLink">Index</a></div>
-                                <div class="pagination-link"><a href="#" class="next">&raquo;</a></div>
-                            </div>
 
                             <!-- Metadata Article-->
                             <div id="metadataArticle">
