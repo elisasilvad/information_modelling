@@ -693,7 +693,7 @@ a#closebtn-2 {
 }
 
 #buttonList #sticky-eye {
-  background-color: #c2b170;
+  background-color: #ecc113;
   color: whitesmoke;
   border: none;
   border-radius: 10px;
@@ -814,7 +814,7 @@ a#closebtn-2 {
 
 #paginationLinks {
     font-family: "hardingreg" !important;
-    background-color: #f2d35a;/**#c2b170;**/
+    background-color: #f2de8c;/**#c2b170;**/
     font-size: 1.3em;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
@@ -840,7 +840,7 @@ a#closebtn-2 {
 .pagination-link a:hover {
     opacity: 1;
     color: black;
-    /**background-color: #9f9360; /**#add8e6;**/
+    background-color: #f2de8c; /**#add8e6;**/
 }
 
 #paginationLinks:after {
