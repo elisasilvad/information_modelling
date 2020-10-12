@@ -693,7 +693,7 @@ a#closebtn-2 {
 }
 
 #buttonList #sticky-eye {
-  background-color: #0099e6;
+  background-color: #c2b170;
   color: whitesmoke;
   border: none;
   border-radius: 10px;
@@ -702,8 +702,11 @@ a#closebtn-2 {
 }
 
 #buttonList #disclaimer-btn {
-  background-color: #0099e6;
+  font-size: 1em;
+  background-color: #c2b170; /**#0099e6;**/
   color: whitesmoke;
+  padding-left: 1%;
+  padding-right: 1%;
   border: none;
   border-radius: 10px;
   transition:1s;
@@ -711,7 +714,7 @@ a#closebtn-2 {
 }
 
 #disclaimer-btn:hover {
-    background-color: #add8e6;
+    background-color: #9f9360; /**#add8e6;**/
     color:white;
 }
 
@@ -811,10 +814,10 @@ a#closebtn-2 {
 
 #paginationLinks {
     font-family: "hardingreg" !important;
-    background-color: #0099e6;
+    background-color: #c2b170;
     font-size: 1.3em;
     width: 100%;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 15px 15px 0px 0px;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -827,7 +830,7 @@ a#closebtn-2 {
 }
 
 .pagination-link a {
-    color:#fff;
+    color: whitesmoke;
     width:100%;
     text-decoration: none;
     padding-left:0.3em;
@@ -837,7 +840,7 @@ a#closebtn-2 {
 .pagination-link a:hover {
     opacity: 1;
     color: white;
-    background-color: #add8e6;
+    background-color: #9f9360;/**#add8e6;**/
 }
 
 #paginationLinks:after {
