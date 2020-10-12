@@ -652,7 +652,7 @@ a#closebtn-2 {
 }
 
 .sticky #metadataViewer {
-    padding-top:10%;
+    margin-top:10%;
 }
 
 #metadataViewer .label {
@@ -689,6 +689,10 @@ a#closebtn-2 {
 #styles option:checked{
     color:#f5f5f5;
     background: #4e98da;
+}
+
+#discliamer-btn {
+  display: inline-block;
 }
 
 #disclaimer-btn button {
