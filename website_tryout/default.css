@@ -1,0 +1,12 @@
+#file #IssueCover {
+	margin:2%;
+}
+
+#file #IssueCover .IssueBibliographicCitation {
+	text-transform: uppercase;
+	margin-bottom: 3%;
+}
+
+#file .ArticleInfo {
+	margin-bottom: 3%;
+}

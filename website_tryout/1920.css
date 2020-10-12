@@ -349,7 +349,7 @@ a {
 	font-family: Strasua;
 	text-transform: lowercase;
 	text-align: center;
-	font-size: 300%;
+	font-size: 600%;
 	text-shadow: -0.08em 0px rgba(268, 0, 30, 0.6), 0.08em 0px rgb(50, 70, 278, 0.6), 0.18em 0px rgb(255, 265, 10, 0.8);
 }
 
@@ -398,7 +398,7 @@ a {
 
 @media only screen and (max-width: 600px) {
 	#file #IssueCover h1 {
-		font-size: 150%;
+		font-size: 300%;
 	}
 
 	#file #IssueCover .IssueBibliographicCitation {     /** Non funziona !!!**/

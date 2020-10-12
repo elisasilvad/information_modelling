@@ -510,6 +510,11 @@ margin-top:50px;}
 }
 }
 
+/** Browsing page **/
+.card-deck {
+  margin-bottom: 5%;
+}
+
 
 /** Leaps_magazine page **/
 #eyeStyle {
@@ -784,11 +789,13 @@ a#closebtn-2 {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
 .pagination-link {
     width:33%;
     cursor: pointer; /* Pointer/hand icon */
     float: left;
 }
+
 .pagination-link a {
     color:#fff;
     width:100%;
@@ -820,7 +827,7 @@ a#closebtn-2 {
 
   #eyeStyle button {
     margin-top: 15%;
-      width:47px;
+    width:47px;
   }
 }
 
