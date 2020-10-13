@@ -539,7 +539,7 @@ margin-top:50px;}
 
 #eyeStyle #buttonList {
   margin-top: 3%;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   text-align: center;
 }
 
@@ -822,13 +822,13 @@ a#closebtn-2 {
 
 #paginationLinks {
     font-family: "hardingreg" !important;
-    background-color: #f2de8c;/**#c2b170;**/
+    background-color: #ecc113;/**#c2b170;**/
     font-size: 1.3em;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1%;
+    margin-bottom: 1%;
     opacity: 1;
 }
 
