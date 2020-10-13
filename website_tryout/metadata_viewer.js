@@ -586,10 +586,10 @@ $(document).ready(function(){
 function jsonFunction(){
     var n = 0
     var text = '{"issues":[' +
-    '{"issue":"1","topic":"The EYE on TECHNOLOGY" },' +
-    '{"issue":"2","topic":"space" },' +
-    '{"issue":"3","topic":"climate" },' +
-    '{"issue":"4","topic":"health" }]}';
+    '{"issue":"1","topic":"TECHNOLOGY" },' +
+    '{"issue":"2","topic":"SPACE" },' +
+    '{"issue":"3","topic":"CLIMATE" },' +
+    '{"issue":"4","topic":"HEALTH" }]}';
 
     obj = JSON.parse(text);
 

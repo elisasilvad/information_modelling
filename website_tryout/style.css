@@ -534,7 +534,6 @@ margin-top:50px;}
   background-color: white;
   z-index:1;
   border-radius: 0px 0px 15px 15px;
-  opacity:0.9;
 }
 
 #eyeStyle #buttonList {
@@ -829,7 +828,6 @@ a#closebtn-2 {
     text-align: center;
     margin-top: 1%;
     margin-bottom: 1%;
-    opacity: 1;
 }
 
 .pagination-link {
