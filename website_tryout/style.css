@@ -183,11 +183,11 @@ background-color: white;
 }
 
 
-.sticky {
+/**.sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 120;
-}
+}**/
 
 #asideLeft {
     margin-top:20%;
@@ -532,6 +532,7 @@ margin-top:50px;}
   top: 0;
   background-color: white;
   padding: 1%;
+  z-index:1;
 }
 
 #eyeStyle #buttonList {
@@ -571,8 +572,9 @@ margin-top:50px;}
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    margin-top: 5%;
+    margin-top: 0vmax;
     padding-bottom:5%;
+    z-index:2;
 }
 
 #selector .list a {
@@ -603,23 +605,18 @@ margin-top:50px;}
 
 #sticky-eye {
     font-family: "hardingreg" !important;
-    position:fixed;
-    margin: 4%;
-    padding: 4%;
+    position:sticky;
+    top: 40vmax;
     padding-left: 0%;
-    width:100%;
-    height: 60px;
     overflow: hidden; 
     background:white;
     z-index:1;
-    font-size: 1em; 
     cursor:pointer;
     display: none;  /*value will change via javascript*/ 
 }
 
 .openbtn {
   font-size: 1.5em;
-  padding: 3%;
 }
 
 .openbtn:hover {
