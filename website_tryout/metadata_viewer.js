@@ -580,3 +580,18 @@ $(document).ready(function(){
       $(".head-title").fadeOut(500);
     });
 });
+
+
+$(document).ready(function(){
+    $("#fileWrapper").scroll(function(){
+        alert("Scroll");
+    });
+});
+
+
+//$(document.ready(function(){
+//    $("#eyeStyle").scroll(function(){
+//        $(".navbar").removeClass(".fixed-top");
+//
+//    });
+//});

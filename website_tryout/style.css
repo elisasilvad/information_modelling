@@ -21,7 +21,12 @@ html {
 
 body {
     font-family: 'Amiri', serif;
-    padding-top: 50px;
+    padding-top: 50px;                /** why?? **/
+}
+
+html, body{
+    margin:0px;
+    padding:0px;
 }
 
 .navbarstyle { 
@@ -29,7 +34,7 @@ border-bottom: 2px solid black;
 }
 
 .navbarstyle2 { 
-border-bottom: 4px solid black;
+  border-bottom: 4px solid black;
 }
 
 .navbar-brand {
@@ -522,6 +527,9 @@ margin-top:50px;}
 
 /** Leaps_magazine page **/
 #eyeStyle {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   background-color: transparent;
   padding: 1%;
 }
@@ -606,7 +614,7 @@ margin-top:50px;}
     z-index:1;
     font-size: 1em; 
     cursor:pointer;
-    display: none;/*value will change via javascript*/
+    display: none;  /*value will change via javascript*/ 
 }
 
 .openbtn {
