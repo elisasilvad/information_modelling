@@ -530,13 +530,16 @@ margin-top:50px;}
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  padding:2%;
   background-color: white;
-  padding: 1%;
   z-index:1;
+  border-radius: 0px 0px 15px 15px;
+  opacity:0.9;
 }
 
 #eyeStyle #buttonList {
   margin-top: 3%;
+  padding-bottom: 2%;
   text-align: center;
 }
 
@@ -922,4 +925,16 @@ a#closebtn-2 {
     #fileWrapper {
         margin-top: 60px;
     }
+}
+
+
+
+
+
+
+/** Browsing **/
+.container_issue {
+  background-color: #f2f2f2;
+  padding-top: 25%;
+  padding-bottom: 25%;
 }

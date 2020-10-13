@@ -582,16 +582,32 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
-    $("#fileWrapper").scroll(function(){
-        alert("Scroll");
-    });
-});
-
-
-//$(document.ready(function(){
-//    $("#eyeStyle").scroll(function(){
-//        $(".navbar").removeClass(".fixed-top");
 //
-//    });
-//});
+function jsonFunction(){
+    var n = 0
+    var text = '{"issues":[' +
+    '{"issue":"1","topic":"The EYE on TECHNOLOGY" },' +
+    '{"issue":"2","topic":"space" },' +
+    '{"issue":"3","topic":"climate" },' +
+    '{"issue":"4","topic":"health" }]}';
+
+    obj = JSON.parse(text);
+
+    for (i in obj.issues) {
+        document.getElementById("demo" + n.toString()).innerHTML =
+        obj.issues[i].topic;
+        document.getElementById("demonr" + n.toString()).innerHTML = "Issue " + obj.issues[i].issue;
+        n = n + 1;
+    }
+}
+
+
+
+
+//function jsonFunction(){
+//    var text = '{"issue":"1", "topic":"technology"}';
+
+//    obj = JSON.parse(text);
+//    document.getElementById("demo").innerHTML =
+//    obj.topic;
+//}

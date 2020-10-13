@@ -6,6 +6,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -71,16 +72,18 @@
                    		 <br><br>
                         <div class="eyeicon"><i class="fa fa-eye eyeicon"></i></div>
                         <h1>Browse our issues</h1>
+                        <button onclick="jsonFunction()">Click</button><br><br>
+
             
             <div class="row">
             <div class="col-sm-12">
             <div class="card-deck">
               <div class="card">
-                <div class="container_img">
-                    <a href="#"><img class="card-img-top image" src="img/nytm.jpg" alt="Card image cap"></a>
-                  </div>
+                <div class="container_issue">
+                  <h1> <span id="demo0"></span></h1>
+                </div>
                   <div class="card-body">
-                    <h5 class="card-title text-center">The EYE on Science</h5>
+                    <h5 id="demonr0" class="card-title text-center"></h5>
                     </div>
                 <!--  <div class="card-footer">
                     <small class="text-muted">1890-aa</small>
@@ -88,11 +91,11 @@
               </div>
 
                 <div class="card">
-                <div class="container_img">
-                    <a href="#"><img class="card-img-top image" src="img/time.jpg" alt="Card image cap"></a>
-                  </div>
+                <div class="container_issue">
+                  <h1> <span id="demo1"></span></h1>
+                </div>
                   <div class="card-body">
-                    <h5 class="card-title text-center">The EYE on Space</h5>
+                    <h5 id="demonr1" class="card-title text-center"></h5>
                     </div>
                   <!-- <div class="card-footer">
                     <small class="text-muted">2000-aa</small>
@@ -106,11 +109,11 @@
             <div class="col-sm-12">
             <div class="card-deck">
               <div class="card">
-                <div class="container_img">
-                    <a href="#"><img class="card-img-top image" src="img/nytm.jpg" alt="Card image cap"></a>
-                  </div>
+                <div class="container_issue">
+                  <h1> <span id="demo2"></span></h1>
+                </div>
                   <div class="card-body">
-                    <h5 class="card-title text-center">The EYE on Health</h5>
+                    <h5 id="demonr2" class="card-title text-center"></h5>
                     </div>
                 <!--  <div class="card-footer">
                     <small class="text-muted">1890-aa</small>
@@ -118,11 +121,11 @@
               </div>
 
                 <div class="card">
-                <div class="container_img">
-                    <a href="#"><img class="card-img-top image" src="img/time.jpg" alt="Card image cap"></a>
-                  </div>
+                <div class="container_issue">
+                  <h1> <span id="demo3"></span></h1>
+                </div>
                   <div class="card-body">
-                    <h5 class="card-title text-center">The EYE on Climate</h5>
+                    <h5 id="demonr3" class="card-title text-center"></h5>
                     </div>
                   <!-- <div class="card-footer">
                     <small class="text-muted">2000-aa</small>
@@ -180,5 +183,7 @@
 
                 </footer>
               </div>
+
+               <script type="text/javascript" src="metadata_viewer.js"></script>
     </body>
 </html>
