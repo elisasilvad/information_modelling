@@ -4,28 +4,15 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 		<script>
-		$(document).ready(function(){
-		  $("button").click(function(){
-			     $.ajax({
-		        method: 'GET',
-		        url: 'tryout.json',
-		        success: function (d) {
-		            loadCover(d, title, bibliographicCitation);
-		            addAuthorsAndKeywords(d);
-		            ajaxResult.push(d);
-		            
-		        },
-		        error: function () {
-		            alert('No document to show')
-		        }
-	    });
-		});
+			$.getJSON('tryout.json', function(data){
+				console.log('It worked!');
+			});
 		</script>
 
 	</head>
 	<body>
 		<h1>AJAX tryout</h1>
-		<button>Get JSON data</button>
-		<div id="div1"></div>
+
+
 	</body>
 </html>
