@@ -138,11 +138,13 @@ h1, h2, h3, h4, h5{
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
 .pagination-link {
     width:33%;
     cursor: pointer; /* Pointer/hand icon */
     float: left;
 }
+
 .pagination-link a {
     color:#fff;
     width:100%;
@@ -172,12 +174,14 @@ h1, h2, h3, h4, h5{
       text-decoration: none;
     color:#25383C;
   }
-  #metadataArticle {
+
+#metadataArticle {
     width: 95%;
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 2.5%;
 }
+
 #metadataArticle .nav-item{
     background-color: #f5f5f5;
 }
@@ -393,7 +397,7 @@ a#closebtn-2 {
     font-size: 2em;
 }
 
-#sticky-eye {
+/**#sticky-eye {
     position:fixed;
     top:50px;
     left:0;
@@ -407,8 +411,6 @@ a#closebtn-2 {
     padding-left:5px;
     cursor:pointer;
     display: none;/*value will change via javascript*/
-}
-
 
 
 #wikiLink {
