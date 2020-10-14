@@ -4,11 +4,11 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 		<script>
-			$.getJSON('tryout.json', function(data){
+			/*$.getJSON('tryout.json', function(data){
 				console.log(data);
-			});
+			});*/
 
-			/*$.ajax({
+			$.ajax({
 				url : 'tryout.json', 
 				dataType : 'json', 
 				type : 'get', 
@@ -18,13 +18,21 @@
 						console.log(value.topic);
 					});
 					}
-				});*/
+				});
+
+
+
+
+			$(document).ready(function(){
+				$("#covers").html("Here goes the covers");
+			});	
 		</script>
 
 	</head>
 	<body>
 		<h1>AJAX tryout</h1>
 
+		<div id="covers"></div>
 
 	</body>
 </html>
