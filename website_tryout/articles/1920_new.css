@@ -235,3 +235,96 @@ table caption .num {
 	border-left: solid 2px black;
 
 }
+
+
+
+/** COVER **/
+#file {
+	background: linear-gradient(120deg, black 60%, #ffed4b 60%);
+}
+
+#IssueCover {
+	margin: 7%;
+}
+
+#IssueCover h1 {
+	font-family: Strasua;
+	color:white;
+	text-transform: lowercase;
+	text-align: center;
+	font-size: 600%;
+	text-shadow: -0.08em 0px rgba(268, 0, 30, 0.6), 0.08em 0px rgb(50, 70, 278, 0.6), 0.18em 0px rgb(255, 265, 10, 0.8);
+	width: 50%;
+	padding: 10%;
+	padding-left: 2%;
+	padding-right: 2%;
+	/**transform: rotate(-20deg);**/
+}
+
+#file #IssueCover .IssueBibliographicCitation {
+	font-family: 'Comfortaa', cursive;
+	color:white;
+	text-transform: uppercase;
+	font-weight: bold;
+	/**transform: rotate(-20deg);**/
+	margin-top: -10%;
+	margin-left: 30%;
+}
+
+/**#file #IssueCover .IssueBibliographicCitation::before {
+   content: '';
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   -moz-border-radius: 7.5px;
+   -webkit-border-radius: 7.5px;
+   border-radius: 7.5px;
+   background-color: black;
+}**/
+
+#file #IssueIndex {
+	background: url("img/eye4.png") no-repeat;
+	background-position:12% 100%;
+	background-size: 40% 60%;
+}
+
+
+#file #IssueCover .ArticleInfo {
+	font-family: 'Comfortaa', cursive !important;
+	text-transform: lowercase;
+	font-weight:bold;
+	margin-left: 53%;
+	padding-bottom: 2%;
+
+}
+
+#file #IssueCover .ArticleInfo a {
+	text-decoration: none;
+	padding: 1%;
+/**	border-bottom: solid 2px black;
+	border-left: solid 2px black;**/
+}
+
+#file #IssueCover .ArticleInfo a:hover {
+	color:rgba(268, 0, 30);
+	border-bottom: solid 2px rgb(50, 70, 278);
+	border-left: solid 2px rgb(255, 265, 10);
+}
+
+#file #IssueCover .ArticleInfo img {
+	display:none;
+}
+
+#file .ArticleInfo .coverLabel::before {
+	content: '';
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   -moz-border-radius: 7.5px;
+   -webkit-border-radius: 7.5px;
+   border-radius: 7.5px;
+   background-color: red;
+   margin-left: -2%;
+   margin-right: 1%;
+
+}
