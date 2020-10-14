@@ -1,6 +1,16 @@
 <html>
 	<head>
 		<title>Ajax tryout</title>
+
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+	    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 		<script>
@@ -14,18 +24,32 @@
 				type : 'get', 
 				cache : false, 
 				success : function(data) {
+					var text = "";
 					$(data.issues).each(function(index, value) {
-						console.log(value.topic);
+						text =+ value.topic;
 					});
+					$("#print").html(text);
 					}
 				});
 
 
 
 
-			$(document).ready(function(){
-				$("#covers").html("Here goes the covers");
-			});	
+			/*$(document).ready(function(){
+				var myList = [0, 1, 2];
+				var text = "";
+				for (n in myList) {
+					//text += "<div id='cover" + n.toString() + "'"+ "><p>" + n.toString() + " cover number </p></div>";
+					
+					$("#cardCover").append("<div class='card'><div class='container_issue'><h2>The EYE on <br> <span id='demo" + n.toString() + "'" + "></span></h2></div><div class='card-body'><h5 id='demonr" + n.toString() + "'" + " class='card-title text-center'></h5></div>");
+
+				};
+				//$("#covers").html(text);
+				
+				//$("#cardCover").html(text);
+
+				
+			});	*/
 		</script>
 
 	</head>
@@ -33,6 +57,63 @@
 		<h1>AJAX tryout</h1>
 
 		<div id="covers"></div>
+
+		<div class="row">
+            <div class="col-sm-12">
+	            <div id="cardCover" class="card-deck">
+	            </div>
+           	</div>
+        </div>
+
+
+        <p id="print"></p>
+<!--        <h2> Prova </h2>
+        <div class="row">
+		<div class="col-sm-12">
+            <div id="cardCover" class="card-deck">
+
+            <div class="card">
+                <div class="container_issue">
+                  <h2>The EYE on <br> <span id="demo0"></span></h2>
+                </div>
+                  <div class="card-body">
+                    <h5 id="demonr0" class="card-title text-center"></h5>
+                    </div>
+              </div>
+
+                <div class="card">
+                <div class="container_issue">
+                  <h2>The EYE on <br> <span id="demo1"></span></h2>
+                </div>
+                  <div class="card-body">
+                    <h5 id="demonr1" class="card-title text-center"></h5>
+                    </div>
+              </div>
+            </div>
+            </div>
+            </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+            <div class="card-deck">
+              <div class="card">
+                <div class="container_issue">
+                  <h2>The EYE on <br> <span id="demo2"></span></h2>
+                </div>
+                  <div class="card-body">
+                    <h5 id="demonr2" class="card-title text-center"></h5>
+                    </div>
+              </div>
+
+                <div class="card">
+                <div class="container_issue">
+                  <h2>The EYE on <br> <span id="demo3"></span></h2>
+                </div>
+                  <div class="card-body">
+                    <h5 id="demonr3" class="card-title text-center"></h5>
+                    </div>
+              </div>
+            </div>  -->
 
 	</body>
 </html>
