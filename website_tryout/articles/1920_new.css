@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Comfortaa:wght@300&display=swap');
+
+@font-face {
+	font-family: Strasua;
+	src: url(font/strasua.regular.ttf);
+}
+
+body {
+	background-color: #f9f7de;
+}
+
+#ArticleBody {
+	padding:5%;
+	background-color: #f9f7de;
+	font-family: 'Comfortaa', cursive;
+	text-transform: lowercase;
+	word-wrap: break-word;
+}
+
+#CoverWrapper {
+	background-image: url("coverBackground.svg");
+	background-repeat: no-repeat;
+	background-position: 95%;
+	background-size: 50%;
+	border-top: solid 10px black;
+	border-bottom: solid 10px black;
+}
+
+#CoverWrapper h1 {
+	font-family: Strasua;
+	font-size: 2.1em;
+	font-weight:bolder;
+	text-transform: uppercase;
+	width: 60%;
+	transform: rotate(-7deg);
+	padding: 7%;
+	padding-left: 3%;
+	padding-top: 10%; 
+}
+
+.coverinfo {
+	font-family: Strasua;
+	width: 60%;
+	text-transform: uppercase;
+	transform: rotate(-7deg);
+	padding-left: 7%;
+	padding-bottom: 10%;
+	font-size: 1.2em;
+	/**text-align: center;**/
+}
+
+.coverinfo .byline {
+	color:red;
+	border-bottom: solid 5px black;
+}
+
+.coverimg {
+	width: 35%;
+	margin-left: 15%;
+}
+
+.covercaption {
+	width: 35%;
+	margin-bottom: 3%;
+	margin-left: 15%;
+}
+
+#ContentWrapper {
+	padding-top: 5%;
+}
+
+#ContentWrapper h3, h4, h5 {
+	display: block;
+	position:relative;
+	margin-left: 35%;
+}
+
+h2 {
+	display: block;
+	position:relative;
+	margin-left: 25%;
+	font-size: 220% !important;
+	font-weight: bold !important;
+	color:black;
+	border-top: solid 70px red;
+	padding: 1%;
+	padding-top: -2%;
+	margin-top: 5%;
+	width: 40%;
+}
+
+h3, h4, h5 {
+	border-top: solid 10px red;
+	width: 40%;
+	margin-top: 2%;
+}
+
+#ContentWrapper p, blockquote {
+	display: block;
+	width: 60%;
+	margin-left: 40%;
+	text-align: justify;
+}
+
+figure {
+	float:left;
+	margin-left:0%;
+	width: 100%;
+	padding-left: 2%;
+	border-left: solid 5px black;
+}
+
+img {
+	max-width: 100%;
+    max-height: 100%;
+    width: 60%; 			/** da provare il contrario !! **/
+  	height: auto;
+  	 -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  	filter: grayscale(100%);
+  	object-fit: cover;
+}
+
+figcaption {
+	font-size: 0.8em;
+	font-weight: lighter;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 60%; 
+}
+
+.coverpic figure {
+	border:none;
+}
+
+#Abstract {
+	border-right: solid 20px black;
+	margin-left: -5%;
+	padding-right: 2%;
+	width: 40%;
+}
+
+#Abstract .label {
+	font-family: Strasua;
+	font-weight: bold;
+	color: black;
+}
+
+#References {
+	width: 40%;
+	border: solid 10px red;
+	padding: 1%;
+}
+
+#References h2 {
+	font-family: Strasua;
+	border: none;
+}
+
+#References p {
+	margin-left: 0%;
+	width: 100%;
+}
+
+#References .biblioItem {
+	border-bottom: solid 2px red;
+}
+
+#References .biblioItem:last-of-type {
+	border:none;
+}
+
+#References .biblioMarker {
+	font-family: Strasua;
+}
+
+#Articlebody table {
+	font-family: 'Comfortaa', cursive;
+	font-size: 0.8em;
+	width:100%;
+	height:100%;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	word-break: break-word;
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 1px;
+	border-collapse: collapse;
+	border: solid 10% black;
+	page-break-inside: avoid;
+}
+
+
+#Articlebody th, td {
+	border: solid 3px black;
+	padding:2%;
+}
+
+tr:nth-child(even) {
+	background-color: white;
+}
+
+tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+
+th:nth-child(odd) {
+	background-color: yellow;
+}
+
+th:nth-child(even) {
+	background-color: blue;
+}
+
+th {
+	font-family: Strasua;
+	text-transform: uppercase;
+}
+
+table caption {
+}
+
+table caption p {
+	padding: 1%;
+	border-left: solid 3px black;
+}
+
+table caption .num {
+	font-family: Strasua;
+	background-color: red;
+	font-size: 1.5em;
+	padding: 1%;
+	padding-top: 2%;
+	border-top: solid 3px black;
+	border-left: solid 2px black;
+
+}
