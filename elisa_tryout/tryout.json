@@ -1,5 +1,19 @@
-{
-  "one": "Singular sensation",
-  "two": "Beady little eyes",
-  "three": "Little birds pitch by my doorstep"
+{"issues":[
+    {
+    	"issue":"1",
+		"topic":"TECHNOLOGY" 
+	},
+    {
+    	"issue":"2",
+    	"topic":"SPACE" 
+    },
+    {
+    	"issue":"3",
+    	"topic":"CLIMATE" 
+    },
+    {
+    	"issue":"4",
+    	"topic":"HEALTH" 
+    }
+    ]
 }
