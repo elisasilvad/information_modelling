@@ -1,23 +1,28 @@
 {"issues":[
     {
     	"issue":"1",
-		"topic":"TECHNOLOGY" 
+		"topic":"TECHNOLOGY", 
+        "pageLink":"technology.html"
 	},
     {
     	"issue":"2",
-    	"topic":"SPACE" 
+    	"topic":"SPACE",
+        "pageLink":"space.html" 
     },
     {
     	"issue":"3",
-    	"topic":"CLIMATE" 
+    	"topic":"CLIMATE",
+        "pageLink":"climate.html"
     },
     {
     	"issue":"4",
-    	"topic":"HEALTH" 
+    	"topic":"HEALTH",
+        "pageLink":"healt.html" 
     }, 
     {
         "issue":"n",
-        "topic":"N"
+        "topic":"N",
+        "pageLink":"N.html"
     }
     ]
 }

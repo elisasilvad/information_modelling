@@ -1,0 +1,83 @@
+@font-face {
+	font-family: Vogue;
+	src: url(font/Vogue.ttf);
+  
+ }
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambo&display=swap');
+
+#file {
+	padding:1%;
+	padding-top: 0%;
+	background: url(barcode.jpg), url(background2000.jpeg);
+	background-position: 2% 98%, top;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 15%, cover;
+}
+
+#file #IssueCover h1 {
+	font-family: Vogue !important;
+	font-weight: 100 !important;
+	font-kerning: normal;
+	text-transform: uppercase;
+	color:white;
+	font-size: 12vmax;
+	text-align: center;
+}
+
+#file .IssueBibliographicCitation {
+	color:white;
+	text-transform: uppercase;
+	font-family: 'Barlow Semi Condensed', sans-serif !important;
+	font-weight: 200 !important;
+	margin-top: -15%;
+	margin-bottom: 20%;
+	font-size: 2.5vmin;
+	width:10vmin;
+	word-break: break-all;
+}
+
+#file .ArticleInfo {
+	color:white;
+}
+
+#file .ArticleInfo p {
+	width:60%;
+}
+
+#file .ArticleInfo:nth-child(even) {
+	text-align: right;
+	margin-left: 60%;
+	width:60%;
+}
+
+#file .ArticleInfo .coverLabel a {
+	color: white;
+	font-family: 'Barlow Semi Condensed', sans-serif !important;
+	font-weight: 400 !important;
+	font-size: 3.7vmax;
+	line-height: 0.8em;
+	text-decoration: none;
+}
+
+#file .ArticleInfo .coverLabel a:hover {
+	text-decoration: underline;
+}
+
+#file .ArticleInfo .coverAuthor {
+	color:#ffcc00;
+	font-family: 'Source Serif Pro', serif !important;
+	font-style: oblique;
+	font-size: 2vmax;
+}
+
+#file .ArticleInfo .coverIssued {
+	font-family: 'Questrial', sans-serif !important;
+	font-weight: 200 !important;
+	letter-spacing: 0.002em;
+	text-transform: uppercase;
+	font-size: 1.5vmax;
+}
