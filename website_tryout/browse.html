@@ -16,7 +16,31 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+          $.ajax({
+            url : 'tryout.json', 
+            dataType : 'json', 
+            type : 'get', 
+            cache : false, 
+            success : function(data) {
+              console.log(data);
+              createCovers(data);
+              }
+            });
 
+
+          function createCovers(obj) {
+            var n = 0;
+            for (i in obj.issues) {
+              $("#cardCover").append("<div class='card'><div class='container_issue'><h2>The EYE on <br> <span id='demo" + n.toString() + "'" + "></span></h2></div><div class='card-body'><h5 id='demonr" + n.toString() + "'" + " class='card-title text-center'></h5></div></div>");
+                    document.getElementById("demo" + n.toString()).innerHTML = obj.issues[i].topic;
+                    document.getElementById("demonr" + n.toString()).innerHTML = "Issue " + obj.issues[i].issue;
+
+                    n = n + 1;
+            }
+
+          }
+        </script>
     </head>
 
     <body>
@@ -78,7 +102,7 @@
                    		 <br><br>
                         <div class="eyeicon"><i class="fa fa-eye eyeicon"></i></div>
                         <h1>Browse our issues</h1>
-                        <h3><button onclick="covers()">Click</button></h3><br><br>
+                        <!--<h3><button onclick="jsonFunction()">Click</button></h3><br><br>-->
                         
 
           
