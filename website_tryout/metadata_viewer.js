@@ -583,34 +583,33 @@ $(document).ready(function(){
 
 
 //
-function jsonFunction(){
-    var n = 0
-    var text = '{"issues":[' +
-    '{"issue":"1","topic":"TECHNOLOGY" },' +
-    '{"issue":"2","topic":"SPACE" },' +
-    '{"issue":"3","topic":"CLIMATE" },' +
-    '{"issue":"4","topic":"HEALTH" }]}';
 
-    obj = JSON.parse(text);
 
-    for (i in obj.issues) {
-        /*document.getElementById("demo" + n.toString()).innerHTML =
-        obj.issues[i].topic;
-        document.getElementById("demonr" + n.toString()).innerHTML = "Issue " + obj.issues[i].issue;
-        n = n + 1;*/
 
-        if (n % 2 == 0) {
-            $("#cardCover").append("<div class='row'>");
+//Function to load covers 
+
+$(document).ready(function(){
+    $.ajax({
+        url : 'tryout.json', 
+        dataType : 'json', 
+        type : 'get', 
+        cache : false, 
+        success : function(data) {
+        console.log(data);
+        createCovers(data);
         }
-        else if (n % 2 != 0) {
-            $("#cardCover").append("</div><div class='row'>");
-        }
+    });
 
-        $("#cardCover .row").append("<div class='card'><div class='container_issue'><h2>The EYE on <br> <span id='demo" + n.toString() + "'" + "></span></h2></div><div class='card-body'><h5 id='demonr" + n.toString() + "'" + " class='card-title text-center'></h5></div></div>");
-        document.getElementById("demo" + n.toString()).innerHTML = obj.issues[i].topic;
-        document.getElementById("demonr" + n.toString()).innerHTML = "Issue " + obj.issues[i].issue;
 
-        n = n + 1;
+    function createCovers(obj) {
+        var n = 0;
+        for (i in obj.issues) {
+            $("#cardCover").append("<div class='card'><div class='container_issue'><h2>The EYE on <br> <span id='demo" + n.toString() + "'" + "></span></h2></div><div class='card-body'><h5 id='demonr" + n.toString() + "'" + " class='card-title text-center'></h5></div></div>");
+            document.getElementById("demo" + n.toString()).innerHTML = obj.issues[i].topic;
+            document.getElementById("demonr" + n.toString()).innerHTML = "Issue " + obj.issues[i].issue;
+
+            n = n + 1;
+            }
+
     }
-}
-
+});
