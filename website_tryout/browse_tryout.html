@@ -17,28 +17,32 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
-          $.ajax({
-            url : 'tryout.json', 
-            dataType : 'json', 
-            type : 'get', 
-            cache : false, 
-            success : function(data) {
-              console.log(data);
-              createCovers(data);
+          function jsonFunction(){
+              var n = 0
+              var text = '{"issues":[' +
+              '{"issue":"1","topic":"TECHNOLOGY" },' +
+              '{"issue":"2","topic":"SPACE" },' +
+              '{"issue":"3","topic":"CLIMATE" },' +
+              '{"issue":"4","topic":"HEALTH" }]}';
+
+              obj = JSON.parse(text);    // Convert a text into a javascript object
+
+              for (i in obj.issues) {
+                  console.log(i);
+                  
+                  /*if (i % 2 == 0) {
+                    $("#cardCover").append("<div class='row" + n.toString() + "'></div>");
+                  }*/
+
+                  /*else if (n % 2 != 0) {
+                      $("#cardCover").append("</div><div class='row'>");
+                  }*/
+                  $("#cardCover").append("<div class='card'><div class='container_issue'><h2>The EYE on <br> <span id='demo" + i.toString() + "'" + "></span></h2></div><div class='card-body'><h5 id='demonr" + i.toString() + "'" + " class='card-title text-center'></h5></div></div>");
+                    document.getElementById("demo" + i.toString()).innerHTML = obj.issues[i].topic;
+                    document.getElementById("demonr" + i.toString()).innerHTML = "Issue " + obj.issues[i].issue;
+
+
               }
-            });
-
-
-          function createCovers(obj) {
-            var n = 0;  //also i works as index!
-            for (i in obj.issues) {
-              $("#cardCover").append("<div class='card'><div class='container_issue'><h2>The EYE on <br> <span id='demo" + n.toString() + "'" + "></span></h2></div><div class='card-body'><h5 id='demonr" + n.toString() + "'" + " class='card-title text-center'></h5></div></div>");
-                    document.getElementById("demo" + n.toString()).innerHTML = obj.issues[i].topic;
-                    document.getElementById("demonr" + n.toString()).innerHTML = "Issue " + obj.issues[i].issue;
-
-              n = n + 1;
-            }
-
           }
         </script>
     </head>
@@ -102,58 +106,14 @@
                    		 <br><br>
                         <div class="eyeicon"><i class="fa fa-eye eyeicon"></i></div>
                         <h1>Browse our issues</h1>
-                        <!--<h3><button onclick="jsonFunction()">Click</button></h3><br><br>-->
+                        <h3><button onclick="jsonFunction()">Click</button></h3><br><br>
                         
 
           
             <div class="col-sm-12">
-            <div id="cardCover" class="card-deck">
+              <div id="cardCover" class="card-deck">
 
-            <!-- Verranno scritti direttamente con Javascript --> 
-            <!--  <div class="card">
-                <div class="container_issue">
-                  <h2>The EYE on <br> <span id="demo0"></span></h2>
-                </div>
-                  <div class="card-body">
-                    <h5 id="demonr0" class="card-title text-center"></h5>
-                    </div>
               </div>
-
-                <div class="card">
-                <div class="container_issue">
-                  <h2>The EYE on <br> <span id="demo1"></span></h2>
-                </div>
-                  <div class="card-body">
-                    <h5 id="demonr1" class="card-title text-center"></h5>
-                    </div>
-              </div>
-            </div>
-            </div>
-            </div>
-
-          <div class="row">
-            <div class="col-sm-12">
-            <div class="card-deck">
-              <div class="card">
-                <div class="container_issue">
-                  <h2>The EYE on <br> <span id="demo2"></span></h2>
-                </div>
-                  <div class="card-body">
-                    <h5 id="demonr2" class="card-title text-center"></h5>
-                    </div>
-              </div>
-
-                <div class="card">
-                <div class="container_issue">
-                  <h2>The EYE on <br> <span id="demo3"></span></h2>
-                </div>
-                  <div class="card-body">
-                    <h5 id="demonr3" class="card-title text-center"></h5>
-                    </div>
-              </div>
-            </div>
-          -->
-            </div>
           </div>
         </div>
       </div>
