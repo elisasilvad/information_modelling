@@ -23,6 +23,7 @@
 				cache : false, 
 				success : function(data) {
 					console.log(data);
+					createCovers(data);
 					/*var text = "";
 					$(data.issues).each(function(index, value) {
 						text =+ value.topic;
@@ -32,6 +33,17 @@
 				});
 
 
+			function createCovers(obj) {
+				var n = 0;
+				for (i in obj.issues) {
+					$("#cardCover").append("<div class='card'><div class='container_issue'><h2>The EYE on <br> <span id='demo" + n.toString() + "'" + "></span></h2></div><div class='card-body'><h5 id='demonr" + n.toString() + "'" + " class='card-title text-center'></h5></div></div>");
+				        document.getElementById("demo" + n.toString()).innerHTML = obj.issues[i].topic;
+				        document.getElementById("demonr" + n.toString()).innerHTML = "Issue " + obj.issues[i].issue;
+
+				        n = n + 1;
+				}
+
+			}
 
 
 			/*$(document).ready(function(){
@@ -66,53 +78,8 @@
 
 
         <p id="print">C'è qualcosa</p>
-<!--        <h2> Prova </h2>
-        <div class="row">
-		<div class="col-sm-12">
-            <div id="cardCover" class="card-deck">
 
-            <div class="card">
-                <div class="container_issue">
-                  <h2>The EYE on <br> <span id="demo0"></span></h2>
-                </div>
-                  <div class="card-body">
-                    <h5 id="demonr0" class="card-title text-center"></h5>
-                    </div>
-              </div>
-
-                <div class="card">
-                <div class="container_issue">
-                  <h2>The EYE on <br> <span id="demo1"></span></h2>
-                </div>
-                  <div class="card-body">
-                    <h5 id="demonr1" class="card-title text-center"></h5>
-                    </div>
-              </div>
-            </div>
-            </div>
-            </div>
-
-          <div class="row">
-            <div class="col-sm-12">
-            <div class="card-deck">
-              <div class="card">
-                <div class="container_issue">
-                  <h2>The EYE on <br> <span id="demo2"></span></h2>
-                </div>
-                  <div class="card-body">
-                    <h5 id="demonr2" class="card-title text-center"></h5>
-                    </div>
-              </div>
-
-                <div class="card">
-                <div class="container_issue">
-                  <h2>The EYE on <br> <span id="demo3"></span></h2>
-                </div>
-                  <div class="card-body">
-                    <h5 id="demonr3" class="card-title text-center"></h5>
-                    </div>
-              </div>
-            </div>  -->
+        <div id="cardCover"></div>
 
 	</body>
 </html>
