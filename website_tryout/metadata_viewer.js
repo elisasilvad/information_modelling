@@ -588,28 +588,31 @@ $(document).ready(function(){
 
 //Function to load covers 
 
-$(document).ready(function(){
-    $.ajax({
-        url : 'tryout.json', 
-        dataType : 'json', 
-        type : 'get', 
-        cache : false, 
-        success : function(data) {
-        console.log(data);
-        createCovers(data);
-        }
-    });
+          $.ajax({
+            url : 'tryout.json', 
+            dataType : 'json', 
+            type : 'get', 
+            cache : false, 
+            success : function(data) {
+              console.log(data);
+              createCovers(data);
+              /*var text = "";
+              $(data.issues).each(function(index, value) {
+                text =+ value.topic;
+              });
+              $("#print").html(text);*/
+              }
+            });
 
 
-    function createCovers(obj) {
-        var n = 0;
-        for (i in obj.issues) {
-            $("#cardCover").append("<div class='card'><div class='container_issue'><h2>The EYE on <br> <span id='demo" + n.toString() + "'" + "></span></h2></div><div class='card-body'><h5 id='demonr" + n.toString() + "'" + " class='card-title text-center'></h5></div></div>");
-            document.getElementById("demo" + n.toString()).innerHTML = obj.issues[i].topic;
-            document.getElementById("demonr" + n.toString()).innerHTML = "Issue " + obj.issues[i].issue;
+          function createCovers(obj) {
+            var n = 0;
+            for (i in obj.issues) {
+              $("#cardCover").append("<div class='card'><div class='container_issue'><h2>The EYE on <br> <span id='demo" + n.toString() + "'" + "></span></h2></div><div class='card-body'><h5 id='demonr" + n.toString() + "'" + " class='card-title text-center'></h5></div></div>");
+                    document.getElementById("demo" + n.toString()).innerHTML = obj.issues[i].topic;
+                    document.getElementById("demonr" + n.toString()).innerHTML = "Issue " + obj.issues[i].issue;
 
-            n = n + 1;
+                    n = n + 1;
             }
 
-    }
-});
+          }
