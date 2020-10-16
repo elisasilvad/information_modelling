@@ -6,7 +6,7 @@
 	src: url(font/strasua.regular.ttf);
 }
 
-body {
+#file {
 	background-color: #f9f7de;
 }
 
@@ -37,6 +37,14 @@ body {
 	padding: 7%;
 	padding-left: 3%;
 	padding-top: 10%; 
+}
+
+.subtitle {
+	font-family: Strasua;
+	width: 60%;
+	transform: rotate(7deg);
+	padding-left: 8%;
+	padding-bottom: 5%;
 }
 
 .coverinfo {
@@ -145,6 +153,41 @@ figcaption {
 	font-weight: bold;
 	color: black;
 }
+
+#Credits {
+	font-size:0.8em;
+	line-height: 95%;
+	font-style: oblique;
+	border-left: solid 15px white;
+	background-color: blue;
+	color: white;
+	width: 40%;
+}
+
+#Credits p {
+  line-height: 1em;   /* within paragraph */
+  margin-bottom: -2%; /* between paragraphs */
+  }
+
+#Summary {
+	font-size:0.8em;
+	border-left: solid 15px black;
+	border-bottom: solid 20px white;
+	margin-bottom: 1.5em;
+	background-color: blue;
+	color: white;
+	padding: 2%;
+	width: 30%;
+}
+
+#Summary p {
+
+}
+
+#Summary .label {
+	font-family: Strasua;
+}
+
 
 #References {
 	width: 40%;
