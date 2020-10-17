@@ -32,7 +32,7 @@
           function createCovers(obj) {
             var n = 0;  //also i works as index!
             for (i in obj.issues) {
-              $("#cardCover").append("<div class='card'><div class='container_issue'><h2>The EYE on <br> <span id='demo" + n.toString() + "'" + "></span></h2></div><div class='card-body'><h5 id='demonr" + n.toString() + "'" + " class='card-title text-center'></h5></div></div>");
+              $("#cardCover").append("<div class='card'><a href=" + "'" + obj.issues[i].pageLink + "'" + "><div class='container_issue'><h2>The EYE on <br> <span id='demo" + i.toString() + "'" + "></span></h2></div></a><div class='card-body'><h5 id='demonr" + i.toString() + "'" + " class='card-title text-center'></h5></div></div>");
                     document.getElementById("demo" + n.toString()).innerHTML = obj.issues[i].topic;
                     document.getElementById("demonr" + n.toString()).innerHTML = "Issue " + obj.issues[i].issue;
 
