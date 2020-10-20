@@ -366,7 +366,7 @@ ul.minimal {
     display:block;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color:#D3D3D3;
+    /**background-color:#D3D3D3;**/
 }
 
 .figure-widget {
