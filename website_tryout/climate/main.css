@@ -538,3 +538,50 @@ span.head-title {
     color: #fff;
     top: 5px;
 }
+
+
+
+/** STYLE BUTTONS **/
+#eyeStyle {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding:2%;
+  background-color: white;
+  z-index:1;
+  border-radius: 0px 0px 15px 15px;
+}
+
+#eyeStyle #buttonList {
+  margin-top: 3%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+#eyeStyle img {
+  width: 100%;
+}
+
+#eyeStyle button {
+  font-family: "hardingreg";
+  font-size: 1.2em;
+  border: none;
+  background-color: transparent;
+}
+
+#eyeStyle button:hover {
+  opacity: 0.5;
+}
+
+#eyeStyle button:focus {
+  outline: none;
+}
+
+.eyeActive {
+  padding: 0;
+  background-color: transparent;
+}
+
+#eyeStyle button img {
+  width: 20px;
+}
