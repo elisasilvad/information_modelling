@@ -214,7 +214,7 @@ list-style-type: none;
 }
 
 .pagination-link {
-    width: 13%;
+    width: 25%;
     cursor: pointer; /* Pointer/hand icon */
     float: left;
 }
