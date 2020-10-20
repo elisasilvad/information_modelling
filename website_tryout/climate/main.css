@@ -214,7 +214,7 @@ list-style-type: none;
 }
 
 .pagination-link {
-    width:33%;
+    width: 13%;
     cursor: pointer; /* Pointer/hand icon */
     float: left;
 }
@@ -237,6 +237,10 @@ list-style-type: none;
     display: table;
   }
 
+#paginationLinks #disclaimer {
+    background-color: white;
+    color:black;
+}
 
 
   #metadataArticle {
