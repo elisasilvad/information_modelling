@@ -204,7 +204,7 @@ list-style-type: none;
 }
 
 #paginationLinks {
-    background-color: #f1ce6c;
+    background-color: #ccb168; /**#f1ce6c; **/
     font-size: 1.2em;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
@@ -217,7 +217,10 @@ list-style-type: none;
     width: 25%;
     cursor: pointer; /* Pointer/hand icon */
     float: left;
+    margin-top: -0.6%;
+    padding-top: 6;
 }
+
 .pagination-link a {
     color:#fff;
     width:100%;
@@ -237,12 +240,12 @@ list-style-type: none;
     display: table;
   }
 
-#disclaimer {
+/**#disclaimer {
     padding-right: 1%;
     padding-top: 1%;
     border-radius: 0px 15px 0px 0px;
     background-color: #ccb168;
-}
+}**/
 
   #metadataArticle {
     width: 95%;
@@ -552,6 +555,7 @@ span.head-title {
   position: sticky;
   top: 0;
   padding-top:2%;
+  padding-bottom: 1%;
   background-color: white;
   z-index:1;
   border-radius: 0px 0px 15px 15px;
