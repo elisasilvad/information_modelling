@@ -17,7 +17,7 @@
 		"publisher": "New York Times",
 		"source": "https://www.nytimes.com/2019/12/04/climate/climate-change-acceleration.html",
 		"keywords": "climate, climate change, environment",
-		"imagesource":"climate_change4.jpg"
+		"imagesource":"images/climate_change4.jpg"
 	},
 	{
 		"label": "Fossil fuels are harming our brains: identifying key messages about the health effects of air pollution from fossil fuels",
@@ -37,6 +37,6 @@
 		"publisher": "National Geographic",
 		"source": "https://www.nationalgeographic.com/science/2020/09/world-missed-critical-deadline-to-safeguard-biodiversity-un-report/",
 		"keywords": "biodiversity, climate change, environment, climate safeguard",
-		"imagesource":"ng1.png"
+		"imagesource":"images/ng1.png"
 	}
 ]
