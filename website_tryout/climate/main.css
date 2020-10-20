@@ -593,11 +593,7 @@ span.head-title {
   width: 20px;
 }
 
-#metanavbar {
-    display: inline-block;
-}
-
-#disclaimer-btn {
+#buttonList #disclaimer-btn {
   font-size: 1em;
   background-color: #bfa853;
   color: whitesmoke;
