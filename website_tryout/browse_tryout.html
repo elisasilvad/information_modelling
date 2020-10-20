@@ -20,30 +20,31 @@
           function jsonFunction(){
               var n = 0
               var text = '{"issues":[' +
-              '{"issue":"1","topic":"TECHNOLOGY", "pageLink":"technology.html" },' +
-              '{"issue":"2","topic":"SPACE" },' +
-              '{"issue":"3","topic":"CLIMATE" },' +
-              '{"issue":"4","topic":"HEALTH" }]}';
+              '{"issue":"1","topic":"TECHNOLOGY", "pageLink":"technology.html", "coverImg":"articles/ng1.png" },' +
+              '{"issue":"2","topic":"SPACE", "pageLink":"space.html", "coverImg":"articles/ng2.png" },' +
+              '{"issue":"3","topic":"CLIMATE", "pageLink":"climate.html", "coverImg":"articles/ng3.png" },' +
+              '{"issue":"4","topic":"HEALTH", "pageLink":"health.html", "coverImg":"articles/ng4.png" }]}';
 
               obj = JSON.parse(text);    // Convert a text into a javascript object
 
               for (i in obj.issues) {
                   console.log(i);
-                  
-                  /*if (i % 2 == 0) {
-                    $("#cardCover").append("<div class='row" + n.toString() + "'></div>");
-                  }*/
-
-                  /*else if (n % 2 != 0) {
-                      $("#cardCover").append("</div><div class='row'>");
-                  }*/
-                  $("#cardCover").append("<div class='card'><a href=" + "'" + obj.issues[i].pageLink + "'" + "><div class='container_issue'><h2>The EYE on <br> <span id='demo" + i.toString() + "'" + "></span></h2></div></a><div class='card-body'><h5 id='demonr" + i.toString() + "'" + " class='card-title text-center'></h5></div></div>");
+                  $("#cardCover").append("<div class='card'><div class='container-img'><a href=" + "'" + obj.issues[i].pageLink + "'" + "><div><figure><img src='" + obj.issues[i].coverImg + "' class='card-img-top' alt=''></figure></div></a></div><div class='card-body'><h2 class='card-title text-center'>The EYE on <br> <span id='demo" + i.toString() + "'" + "></span></h2><h5 id='demonr" + i.toString() + "'" + " class='text-center'></h5></div></div>");
                     document.getElementById("demo" + i.toString()).innerHTML = obj.issues[i].topic;
                     document.getElementById("demonr" + i.toString()).innerHTML = "Issue " + obj.issues[i].issue;
-
-
               }
           }
+
+          $(document).ready(function(){
+            $("#cardCover h2").hide();
+            $("#cardCover img").mouseover(function(){
+              $("#cardCover h2").show();
+            });
+            $("p").mouseout(function(){
+              $("p").css("background-color", "lightgray");
+            });
+        });
+
         </script>
     </head>
 

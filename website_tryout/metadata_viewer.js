@@ -587,7 +587,7 @@ $(document).ready(function(){
 
 
 //Function to load covers 
-function covers() {
+
           $.ajax({
             url : 'tryout.json', 
             dataType : 'json', 
@@ -616,4 +616,3 @@ function covers() {
             }
 
           }
-}
