@@ -237,13 +237,7 @@ list-style-type: none;
     display: table;
   }
 
-#paginationLinks #disclaimer {
-    background-color: white;
-    color:black;
-}
-
-
-  #metadataArticle {
+#metadataArticle {
     width: 95%;
     margin-top: 1em;
     margin-bottom: 1em;
