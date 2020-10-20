@@ -609,3 +609,15 @@ div.btn-group {
     background-color: #806913; 
     color:white;
 }
+
+#metadata-btn {
+    font-size: 1em;
+    background-color: #bfa853;
+    color: whitesmoke;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: none;
+    border-radius: 10px;
+    transition:1s;
+    float:left;
+}
