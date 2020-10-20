@@ -610,7 +610,7 @@ span.head-title {
     color:white;
 }
 
-#metadata-btn {
+#buttonList #metadata-btn {
     font-size: 1em;
     background-color: #bfa853;
     color: whitesmoke;
