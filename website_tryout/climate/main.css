@@ -206,8 +206,8 @@ list-style-type: none;
 #paginationLinks {
     background-color: #f1ce6c;
     font-size: 1.2em;
-    width: 100%;
-    border-radius: 0px 15px 0px 0px;
+    width: 50%;
+    border-radius: 15px 15px 0px 0px;
     text-align: center;
     height: 35px;
     padding: 0.3em;
