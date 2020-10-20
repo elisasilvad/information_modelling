@@ -207,7 +207,7 @@ list-style-type: none;
     background-color: #f1ce6c;
     font-size: 1.2em;
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 0px 15px 0px 0px;
     text-align: center;
     height: 35px;
     padding: 0.3em;
@@ -237,7 +237,8 @@ list-style-type: none;
     display: table;
   }
 
-#metadataArticle {
+
+  #metadataArticle {
     width: 95%;
     margin-top: 1em;
     margin-bottom: 1em;
