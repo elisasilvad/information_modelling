@@ -438,18 +438,19 @@ a#closebtn-2 {
 }
 
 #sticky-eye {
-    position: fixed;
+position: fixed;
     top: 33%;
     left: 0;
     width: %;
-    height: 50px;
+    height: 40px;
     overflow: hidden;
     background: #ccb168;
     z-index: 1;
-    font-size: 50px;
-    padding: 2%;
+    font-size: 40px;
+    padding-right: 1%;
     padding-left: 1%;
     cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
     display: none;/*value will change via javascript*/
 }
 
