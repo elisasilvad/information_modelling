@@ -204,12 +204,12 @@ list-style-type: none;
 }
 
 #paginationLinks {
-    background-color: #483949;
+    background-color: #f1ce6c;
     font-size: 1.2em;
     width: 100%;
     border-radius: 0px 15px 0px 0px;
     text-align: center;
-    height: 40px;
+    height: 35px;
     padding: 0.3em;
 }
 
@@ -586,9 +586,16 @@ span.head-title {
   width: 20px;
 }
 
+div.btn-group {
+    margin: 0 auto; 
+    text-align: center;
+    width: inherit;
+    display: inline-block;
+}
+
 #buttonList #disclaimer-btn {
   font-size: 1em;
-  background-color: #ecc113;
+  background-color: #bfa853;
   color: whitesmoke;
   padding-left: 1%;
   padding-right: 1%;
@@ -599,6 +606,6 @@ span.head-title {
 }
 
 #disclaimer-btn:hover {
-    background-color: #9f9360; 
+    background-color: #806913; 
     color:white;
 }
