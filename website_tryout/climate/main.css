@@ -445,10 +445,9 @@ a#closebtn-2 {
     height: 50px;
     overflow: hidden;
     background: transparent;
-    padding: 0.5em;
     z-index: 1;
-    font-size: 30px;
-    padding-left: 5px;
+    font-size: 50px;
+    padding: 1%;
     cursor: pointer;
     display: none;/*value will change via javascript*/
 }
